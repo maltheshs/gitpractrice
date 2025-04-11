@@ -1,5 +1,7 @@
 package com.practicegit;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,6 +12,8 @@ public static void main(String[] args) {
 	
 	driver.close();
 	driver.quit();
+	
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	
 }
 }
