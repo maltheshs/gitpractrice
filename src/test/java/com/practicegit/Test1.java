@@ -10,10 +10,12 @@ public static void main(String[] args) {
 	WebDriver driver= new ChromeDriver();
 	driver.get("https://www.amazon.in/");
 	
+
 	driver.close();
 	driver.quit();
 	
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	
+	
+
 }
 }
